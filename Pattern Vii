@@ -1,0 +1,26 @@
+Pattern VI
+
+Write a Python program to print the given pattern from user-defined values(dynamic values).
+
+import java.util.*;
+public class Pattern6
+{
+    public static void main(String[] args)
+    {
+     Scanner sc=new Scanner(System.in);
+     int n=sc.nextInt();
+     int i,j;
+     for(i=n;i>=1;i--)
+     {
+         for(j=n;j>i;j--)
+     {
+         System.out.print(" ");
+     }
+     for(int k=1;k<=i;k++)
+     {
+         System.out.print("*");
+     }
+     System.out.println();
+     }
+    }
+}
