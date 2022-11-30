@@ -1,0 +1,31 @@
+Series IV
+
+Write a program to generate the following series --- 0.5,1.5,4.5,13.5,...
+
+ Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+program:
+
+import java.util.*;
+public class Series4
+{
+    public static void main(String[] args)
+    {
+     Scanner sc=new Scanner(System.in);
+     float a=sc.nextFloat();
+     float b=1;
+     System.out.println(b/2);
+     for(int i=0;i<a-1;i++){
+         b*=3;
+         float c=b/2;
+         System.out.printf("%.1f",c);
+         System.out.println();
+     }
+    }
+}
