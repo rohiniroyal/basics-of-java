@@ -1,0 +1,40 @@
+Greatest of two numbers
+Get two integers a and b from the user and write a program to relate 2 integers as equal to, less than or greater than. 
+
+Input format: 
+
+Input consist of 2 integers 
+
+The first input corresponds to the first number(a) 
+
+The second input corresponds to the second number(b) 
+
+Output format: 
+
+If the first number is equal to the second number, print "a is equal to b". 
+
+Otherwise, print "a greater than b" or "a less than b"
+program:
+import java.util.Scanner;
+public class Compare
+{
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+    if(a==b)
+    {
+        System.out.println(a + " is equal to " + b);
+    }
+        else if(a<b)
+        {
+        System.out.println(a + " is less than " + b);
+        }
+        else
+        {
+            System.out.println(a +" is greater than " + b);
+        }
+    }
+}
+
