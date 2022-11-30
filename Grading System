@@ -1,0 +1,71 @@
+Grading System
+The newly appointed Vice Chancellor of Anna University wanted to create a automated grading system for the students to check their grade. When a student enter a mark, the grading system displays the corresponding grade.
+
+Write a program to solve the given problem.
+
+ 
+
+Marks scored
+
+Grade
+
+100
+
+S
+
+(90,100)
+
+A
+
+(80,90)
+
+B
+
+(70,80)
+
+C
+
+(60,70)
+
+D
+
+(50,60)
+
+E
+
+<50
+
+F
+The interval [a,b) includes all numbers greater than or equal to a and less than b.
+
+ Input and Output Format:
+
+Input consists of a single integer which corresponds to the marks scored by the student. Print Invalid Input if it is not in the range 0 to 100.
+
+Refer sample input and output for formatting specifications.
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class Vowcons
+{
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      char ch=sc.next().charAt(0);
+      if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+      ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+      System.out.println("vowel");
+      }
+      else if((ch>='a' && ch<='z')||(ch>='A'&&ch<='Z')){
+      System.out.println("consonant");
+      }
+      else{
+      System.out.println("not an alphabet");
+      }
+    }
+}
