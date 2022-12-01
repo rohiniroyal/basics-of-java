@@ -1,0 +1,45 @@
+Even numbers in a digit - L2
+
+Write a program, which will find all such numbers between the user-given range (both included) such that each digit of the number is an even number.
+
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+Input Format:
+The first input consists of an integer type to get starting value.
+The second input consists of an integer type to get the ending value.
+
+Output Format:
+The output consists of all even digit numbers from the given range separated by a comma. If the range is out of bound, print "Invalid Input".
+
+Constraints:
+1>=n,m<=5000
+program:
+import java.util.*;
+public class even
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        if(m<=5000)
+        {
+        for(int j=n;j<=n+2;j++)
+        {
+             if(j%2==0)
+        {
+            System.out.print(j);
+        }
+        }
+        for(int i=n+2;i<=m;i++)
+        {
+            if(i%2==0)
+        System.out.print(","+i);
+        }
+    }
+    else
+    System.out.print("Invalid Input");
+    }
+}
+
+
