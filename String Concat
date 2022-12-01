@@ -1,0 +1,23 @@
+String Concat
+
+concatenation of given two strings using string library functions:
+
+INPUT & OUTPUT FORMAT: 
+
+Input consists of 2 strings.
+
+Output consists of concatenated strings
+
+program:
+import java.util.Scanner;
+public class String6
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        String s2=sc.next();
+        String s=s1+s2;
+        System.out.println(s);
+    }
+}//Code here
