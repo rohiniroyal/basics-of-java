@@ -1,0 +1,24 @@
+Triangle Validation
+
+Write a program to validate the side of the triangle.  Get three sides measurement from user and validate the triangle. 
+program:
+import java.util.*;
+public class Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the value for side1");
+        int first=sc.nextInt();
+        System.out.println("Enter the value for side2");
+        int second=sc.nextInt();
+        System.out.println("Enter the value for side3 ");
+        int third=sc.nextInt();
+        if(first==0||second==0||third==0)
+        System.out.println("Invalid Input");
+        else if(((first+second)>third) && ((first+third)>second) && ((second+third)>first))
+        System.out.println("Sides form a triangle");
+        else
+        System.out.println("Sides does not form a Triangle");
+        }
+}//code here
