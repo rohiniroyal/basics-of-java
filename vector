@@ -1,0 +1,12 @@
+import java.util.*;
+ public class Main
+{
+    public static void main(String args[])
+    {
+        Vector vec=new Vector();
+        vec.add("roshini");
+        vec.add("anusha");
+        vec.add("rohini");
+        System.out.println(vec);
+    }
+}
