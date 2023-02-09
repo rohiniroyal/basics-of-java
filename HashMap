@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	   // Map mp=new WeakHashMap();
+	   Map<String,Integer>mp=new LinkedHashMap<>();
+	    mp.put("Idly",1);
+	    mp.put("Dosa",2);
+	    //mp.put(3,"MasalaDosa");
+		System.out.println(mp);
+	}
+}
