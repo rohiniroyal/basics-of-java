@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Set set1=new HashSet();
+	    set1.add(11);
+	    set1.add(12);
+	    set1.add(13);
+	    set1.add(14);
+	    System.out.println(set1);
+	     set1.clear();
+	    System.out.println(set1);
+	}
+}
