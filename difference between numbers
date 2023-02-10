@@ -1,0 +1,45 @@
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+        int max=0,min=0;
+        if(a<b&&a<c&&a<d)
+        {
+            min=a;
+        }
+        else if(b<c&&b<d)
+         min=b;
+         else if(c<d)
+         min=c;
+         else
+         min=d;
+
+if(a>b&&a>c&&a>d)
+        {
+            max=a;
+        }
+        else if(b>c&&b>d)
+         max=b;
+         else if(c>d)
+         max=c;
+         else
+         max=d;
+
+        // Write an answer using System.out.println()
+        // To debug: System.err.println("Debug messages...");
+
+        System.out.println(max-min);
+    }
+}
