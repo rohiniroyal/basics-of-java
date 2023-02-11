@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    AbstractSet<String> abc=new HashSet<String>();
+	    abc.add("naveen");
+	    abc.add("versus");
+	    abc.add("rohini");
+		System.out.println(abc);
+	}
+}
